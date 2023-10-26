@@ -6,6 +6,7 @@ import Layout from "./layout/Layout";
 import Dashboard from "./pages/dashboard/Dashboard";
 import AddCustomers from "./pages/AddCustomers";
 import ListCustomers from "./pages/ListCustomers";
+import NotFound from "./pages/NotFound";
 
 // theme context
 
@@ -34,6 +35,7 @@ function App() {
         },
       ],
     },
+    { path: "*", element: <NotFound /> },
   ]);
   return <RouterProvider router={router} />;
 }
