@@ -2,4 +2,6 @@ nav {
   background-color: var(--light-primary-color);
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
   padding: 24px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
