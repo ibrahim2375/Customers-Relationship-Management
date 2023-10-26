@@ -1,0 +1,34 @@
+/* ==============fonts============== */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&family=Josefin+Sans:wght@100;300;400&family=Playfair+Display:wght@400;500&display=swap");
+
+/* ==============colors============== */
+:root {
+  /* *****theme***** */
+  /* ----------light theme---------- */
+  --light-primary-color: #fff;
+  --light-secondary-color: #f1f5f9;
+  --light-text-color: #000;
+  /* ----------dark theme---------- */
+  --dark-primary-color: #1e293b;
+  --dark-secondary-color: #0f172a;
+  --dark-text-color: #fff;
+  /* *****text***** */
+  --muted-text-color: #ccc;
+}
+/* ==============init============== */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: var(--light-secondary-color);
+  font-family: "Josefin Sans", sans-serif;
+}
+/* ==============global classes============== */
+.active {
+  font-weight: bold;
+}
