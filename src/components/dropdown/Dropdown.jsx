@@ -19,7 +19,11 @@ function Dropdown({ title, icon, list }) {
           <span>{title}</span>
           {/* arrow dropdown */}
         </div>
-        <img className="arrow-icon" src={"/icons/arrow-down.png"} alt="icon" />
+        <img
+          className="arrow-icon"
+          src={showList ? "/icons/arrow-up.png" : "/icons/arrow-down.png"}
+          alt="icon"
+        />
       </div>
       <div className="submenu" style={{ display: showList && "flex" }}>
         {list?.map((link) => (
