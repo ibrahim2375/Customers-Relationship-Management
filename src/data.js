@@ -13,17 +13,17 @@ export const menu_links = [
             {
                 id: 1,
                 page: "Companies",
-                path: "/"
+                path: "/companies"
             },
             {
                 id: 2,
                 page: "Calendar",
-                path: "/"
+                path: "/calendar"
             },
             {
                 id: 3,
                 page: "Documents",
-                path: "/"
+                path: "/documents"
             },
         ]
     },
@@ -36,7 +36,7 @@ export const menu_links = [
             {
                 id: 0,
                 page: "Add Customer",
-                path: "/add-customers"
+                path: "/add-customer"
             },
             {
                 id: 1,
@@ -46,7 +46,7 @@ export const menu_links = [
             {
                 id: 2,
                 page: "Groups",
-                path: "/"
+                path: "/groups"
             }
         ]
     },
@@ -58,27 +58,27 @@ export const menu_links = [
             {
                 id: 0,
                 page: "New Desposit",
-                path: "/"
+                path: "/new-desposit"
             },
             {
                 id: 1,
                 page: "New Expense",
-                path: "/"
+                path: "/new-expense"
             },
             {
                 id: 2,
                 page: "Transfer",
-                path: "/"
+                path: "/transfer"
             },
             {
                 id: 3,
                 page: "View Transactions",
-                path: "/"
+                path: "/transactions"
             },
             {
                 id: 4,
                 page: "Balance Sheet",
-                path: "/"
+                path: "/balance-sheet"
             },
         ]
     },
@@ -90,37 +90,37 @@ export const menu_links = [
             {
                 id: 0,
                 page: "Invoices",
-                path: "/"
+                path: "/invoices"
             },
             {
                 id: 1,
                 page: "New Invoice",
-                path: "/"
+                path: "/new-invoice"
             },
             {
                 id: 2,
                 page: "Recurring Invoice",
-                path: "/"
+                path: "/recurring-invoice"
             },
             {
                 id: 3,
                 page: "New Recurring Invoice",
-                path: "/"
+                path: "/new-invoice"
             },
             {
                 id: 4,
                 page: "Quotes",
-                path: "/"
+                path: "/quotes"
             },
             {
                 id: 5,
                 page: "Create New Quote",
-                path: "/"
+                path: "/new-quote"
             },
             {
                 id: 6,
                 page: "Payment",
-                path: "/"
+                path: "/payment"
             },
         ]
     },
@@ -132,12 +132,12 @@ export const menu_links = [
             {
                 id: 0,
                 page: "List All Orders",
-                path: "/"
+                path: "/list-orders"
             },
             {
                 id: 1,
                 page: "Add New Order",
-                path: "/"
+                path: "/new-order"
             },
 
         ]
@@ -150,22 +150,22 @@ export const menu_links = [
             {
                 id: 0,
                 page: "Products",
-                path: "/"
+                path: "/products"
             },
             {
                 id: 1,
                 page: "New Product",
-                path: "/"
+                path: "/new-product"
             },
             {
                 id: 2,
                 page: "Services",
-                path: "/"
+                path: "/services"
             },
             {
                 id: 3,
                 page: "New Service",
-                path: "/"
+                path: "/new-service"
             },
         ]
     },
@@ -177,17 +177,17 @@ export const menu_links = [
             {
                 id: 0,
                 page: "New Account",
-                path: "/"
+                path: "/new-account"
             },
             {
                 id: 1,
                 page: "List Accounts",
-                path: "/"
+                path: "/list-accounts"
             },
             {
                 id: 2,
                 page: "Account Balances",
-                path: "/"
+                path: "/account-balances"
             },
         ]
     },
@@ -199,17 +199,17 @@ export const menu_links = [
             {
                 id: 0,
                 page: "General Settings",
-                path: "/"
+                path: "/settings/general"
             },
             {
                 id: 1,
                 page: "Staff",
-                path: "/"
+                path: "/settings/staff"
             },
             {
                 id: 2,
                 page: "Roles",
-                path: "/"
+                path: "/settings/roles"
             },
         ]
     },
