@@ -8,8 +8,20 @@
   overflow-x: hidden;
   overflow-y: auto;
   height: 100vh;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
-
+.sidebar.closed {
+  width: var(--sidebar-width-closed);
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
 /* =========style scroll bar========= */
 .sidebar::-webkit-scrollbar {
   background-color: transparent;

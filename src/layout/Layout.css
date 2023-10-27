@@ -6,6 +6,21 @@
   position: relative;
   width: calc(100% - var(--sidebar-width));
   left: var(--sidebar-width);
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.content.closed {
+  position: relative;
+  width: calc(100% - var(--sidebar-width-closed));
+  left: var(--sidebar-width-closed);
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 
 .pages {

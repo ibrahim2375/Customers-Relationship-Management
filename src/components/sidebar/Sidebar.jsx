@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 //components
 import Dropdown from "../dropdown/Dropdown";
 // import SlidbarLink from "../navlink/SlidbarLink";
@@ -5,12 +6,12 @@ import Dropdown from "../dropdown/Dropdown";
 import "./Sidebar.css";
 //page data file
 import { menu_links } from "../../data";
-function Sidebar() {
+function Sidebar({isClosed}) {
   return (
-    <div className="sidebar">
+    <div className={isClosed ? "sidebar closed" : "sidebar"}>
       <header>
         {/* logo */}
-        <img src="/logo.png" alt="logo" className="logo" width={30} />
+        <img src="/logo.png" alt="logo" className="logo" width={25} />
         <span>WISE SOFT CRM</span>
       </header>
       {/* nav links */}

@@ -8,17 +8,18 @@ import Footer from "../components/footer/Footer";
 //css style
 import "./Layout.css";
 import Sidebar from "../components/sidebar/Sidebar";
-
+import { useState } from "react";
 
 function Layout() {
+  const [isClosed, setIsClosed] = useState(true);
   return (
     <main>
       <div className="container">
         {/* <Menu /> */}
-        <Sidebar  />
-        <div className={`content`}>
+        <Sidebar isClosed={isClosed} />
+        <div className={isClosed ? "content closed" : "content"}>
           {/* navbar */}
-          <Navbar />
+          <Navbar isClosed={isClosed} setIsClosed={setIsClosed} />
           {/* Outlet to navigate between pages */}
           <div className="pages">
             <Outlet />
