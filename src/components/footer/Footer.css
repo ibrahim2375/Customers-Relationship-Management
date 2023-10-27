@@ -5,8 +5,8 @@ footer {
   align-items: center;
   background-color: var(--light-primary-color);
   position: absolute;
-  bottom: 0;
+   bottom: 0;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
 }

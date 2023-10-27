@@ -9,13 +9,14 @@ import Footer from "../components/footer/Footer";
 import "./Layout.css";
 import Sidebar from "../components/sidebar/Sidebar";
 
+
 function Layout() {
   return (
     <main>
       <div className="container">
-          {/* <Menu /> */}
-          <Sidebar />
-        <div className="content">
+        {/* <Menu /> */}
+        <Sidebar  />
+        <div className={`content`}>
           {/* navbar */}
           <Navbar />
           {/* Outlet to navigate between pages */}

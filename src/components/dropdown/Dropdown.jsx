@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+//icons
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 //css style
 import "./Dropdown.css";
 import { NavLink } from "react-router-dom";
-function Dropdown({ title, icon, list }) {
+function Dropdown({ title, Icon, list }) {
   const [showList, setShowList] = useState(false);
   const handleDropdown = () => {
     setShowList(!showList);
@@ -15,21 +17,21 @@ function Dropdown({ title, icon, list }) {
         onClick={handleDropdown}
       >
         <div className="nav-link-title">
-          <img className="dropdown-icon" src={icon} alt="icon" />
+          <Icon className="dropdown-icon" />
           <span>{title}</span>
           {/* arrow dropdown */}
         </div>
-        <img
-          className="arrow-icon"
-          src={showList ? "/icons/arrow-up.png" : "/icons/arrow-down.png"}
-          alt="icon"
-        />
+        {showList ? (
+          <IoIosArrowUp className="arrow-icon" />
+        ) : (
+          <IoIosArrowDown className="arrow-icon" />
+        )}
       </div>
       <div className="submenu" style={{ display: showList && "flex" }}>
-        {list?.map((link) => (
-          <NavLink to={link?.path} className="submenu-link" key={link?.id}>
-            <img className="dot-icon" src={"/icons/dot-0.png"} alt="icon" />
-            {link.page}
+        {list?.map((Link) => (
+          <NavLink to={Link?.path} className="submenu-link" key={Link?.id}>
+            <Link.icon className="dot-icon" />
+            {Link.page}
           </NavLink>
         ))}
       </div>

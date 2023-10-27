@@ -19,11 +19,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  gap: 20px;
+  padding: 20px 0;
+  gap: 30px;
 }
 .nav-link-title .dropdown-icon {
-  width: 20px;
+  font-size: larger;
+  color: var(--light-primary-color);
 }
 .nav-link:hover {
   background-color: var(--dark-secondary-color);
@@ -50,7 +51,7 @@
   -o-transition: all 0.2s ease-in-out;
 }
 .submenu .submenu-link .dot-icon {
-  width: 13px;
+  font-size: medium;
 }
 /* .submenu .submenu-link:hover {
   background-color: var(--dark-primary-color);

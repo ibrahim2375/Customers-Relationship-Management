@@ -1,29 +1,38 @@
+//icon
+import { AiOutlineSetting, AiOutlineTag, AiOutlineDashboard, AiOutlineShoppingCart, AiOutlineCodepen, AiOutlineBank } from "react-icons/ai";
+import { RiCustomerService2Line } from "react-icons/ri";
+import { BiTransfer } from "react-icons/bi";
+import { LuCircleDotDashed } from "react-icons/lu";
 // pages data
 export const menu_links = [
     {
         id: 0,
         title: "Menu",
-        icon: "/icons/dashboard.png",
+        icon: AiOutlineDashboard,
         list: [
             {
                 id: 0,
                 page: "Dashboard",
-                path: "/dashboard"
+                path: "/dashboard",
+                icon: LuCircleDotDashed
             },
             {
                 id: 1,
                 page: "Companies",
-                path: "/companies"
+                path: "/companies",
+                icon: LuCircleDotDashed
             },
             {
                 id: 2,
                 page: "Calendar",
-                path: "/calendar"
+                path: "/calendar",
+                icon: LuCircleDotDashed
             },
             {
                 id: 3,
                 page: "Documents",
-                path: "/documents"
+                path: "/documents",
+                icon: LuCircleDotDashed
             },
         ]
     },
@@ -31,113 +40,130 @@ export const menu_links = [
     {
         id: 1,
         title: "Customers",
-        icon: "/icons/customers.png",
+        icon: RiCustomerService2Line,
         list: [
             {
                 id: 0,
                 page: "Add Customer",
-                path: "/add-customer"
+                path: "/add-customers",
+                icon: LuCircleDotDashed
             },
             {
                 id: 1,
                 page: "List Customers",
-                path: "/list-customers"
+                path: "/list-customers",
+                icon: LuCircleDotDashed
             },
             {
                 id: 2,
                 page: "Groups",
-                path: "/groups"
+                path: "/groups",
+                icon: LuCircleDotDashed
             }
         ]
     },
     {
         id: 2,
         title: "Transactions",
-        icon: "/icons/transactions.png",
+        icon: BiTransfer,
         list: [
             {
                 id: 0,
                 page: "New Desposit",
-                path: "/new-desposit"
+                path: "/new-desposit",
+                icon: LuCircleDotDashed
             },
             {
                 id: 1,
                 page: "New Expense",
-                path: "/new-expense"
+                path: "/new-expense",
+                icon: LuCircleDotDashed
             },
             {
                 id: 2,
                 page: "Transfer",
-                path: "/transfer"
+                path: "/transfer",
+                icon: LuCircleDotDashed
             },
             {
                 id: 3,
                 page: "View Transactions",
-                path: "/transactions"
+                path: "/transactions",
+                icon: LuCircleDotDashed
             },
             {
                 id: 4,
                 page: "Balance Sheet",
-                path: "/balance-sheet"
+                path: "/balance-sheet",
+                icon: LuCircleDotDashed
             },
         ]
     },
     {
         id: 3,
         title: "Sales",
-        icon: "/icons/sales.png",
+        icon: AiOutlineTag,
         list: [
             {
                 id: 0,
                 page: "Invoices",
-                path: "/invoices"
+                path: "/invoices",
+                icon: LuCircleDotDashed
             },
             {
                 id: 1,
                 page: "New Invoice",
-                path: "/new-invoice"
+                path: "/new-invoice",
+                icon: LuCircleDotDashed
             },
             {
                 id: 2,
                 page: "Recurring Invoice",
-                path: "/recurring-invoice"
+                path: "/recurring-invoice",
+                icon: LuCircleDotDashed
             },
             {
                 id: 3,
                 page: "New Recurring Invoice",
-                path: "/new-invoice"
+                path: "/new-invoice",
+                icon: LuCircleDotDashed
             },
             {
                 id: 4,
                 page: "Quotes",
-                path: "/quotes"
+                path: "/quotes",
+                icon: LuCircleDotDashed
             },
             {
                 id: 5,
                 page: "Create New Quote",
-                path: "/new-quote"
+                path: "/new-quote",
+                icon: LuCircleDotDashed
             },
             {
                 id: 6,
                 page: "Payment",
-                path: "/payment"
+                path: "/payment",
+                icon: LuCircleDotDashed
             },
         ]
     },
     {
         id: 4,
         title: "Orders",
-        icon: "/icons/orders.png",
+        icon: AiOutlineShoppingCart,
         list: [
             {
                 id: 0,
                 page: "List All Orders",
-                path: "/list-orders"
+                path: "/list-orders",
+                icon: LuCircleDotDashed
             },
             {
                 id: 1,
                 page: "Add New Order",
-                path: "/new-order"
+                path: "/new-order",
+                icon: LuCircleDotDashed
             },
 
         ]
@@ -145,71 +171,81 @@ export const menu_links = [
     {
         id: 5,
         title: "Products & Services",
-        icon: "/icons/products.png",
+        icon: AiOutlineCodepen,
         list: [
             {
                 id: 0,
                 page: "Products",
-                path: "/products"
+                path: "/products",
+                icon: LuCircleDotDashed
             },
             {
                 id: 1,
                 page: "New Product",
-                path: "/new-product"
+                path: "/new-product",
+                icon: LuCircleDotDashed
             },
             {
                 id: 2,
                 page: "Services",
-                path: "/services"
+                path: "/services",
+                icon: LuCircleDotDashed
             },
             {
                 id: 3,
                 page: "New Service",
-                path: "/new-service"
+                path: "/new-service",
+                icon: LuCircleDotDashed
             },
         ]
     },
     {
         id: 6,
         title: "Bank & Cash",
-        icon: "/icons/bank.png",
+        icon: AiOutlineBank,
         list: [
             {
                 id: 0,
                 page: "New Account",
-                path: "/new-account"
+                path: "/new-account",
+                icon: LuCircleDotDashed
             },
             {
                 id: 1,
                 page: "List Accounts",
-                path: "/list-accounts"
+                path: "/list-accounts",
+                icon: LuCircleDotDashed
             },
             {
                 id: 2,
                 page: "Account Balances",
-                path: "/account-balances"
+                path: "/account-balances",
+                icon: LuCircleDotDashed
             },
         ]
     },
     {
         id: 7,
         title: "Settings",
-        icon: "/icons/settings.png",
+        icon: AiOutlineSetting,
         list: [
             {
                 id: 0,
                 page: "General Settings",
-                path: "/settings/general"
+                path: "/settings/general",
+                icon: LuCircleDotDashed
             },
             {
                 id: 1,
                 page: "Staff",
-                path: "/settings/staff"
+                path: "/settings/staff",
+                icon: LuCircleDotDashed
             },
             {
                 id: 2,
                 page: "Roles",
-                path: "/settings/roles"
+                path: "/settings/roles",
+                icon: LuCircleDotDashed
             },
         ]
     },

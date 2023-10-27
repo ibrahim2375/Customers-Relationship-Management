@@ -14,6 +14,9 @@
   --dark-text-color: #fff;
   /* *****text***** */
   --muted-text-color: #ccc;
+  /* vars */
+  --sidebar-width: 300px;
+  --sidebar-width-closed: 70px;
 }
 /* ==============init============== */
 * {

@@ -10,7 +10,7 @@ function Sidebar() {
     <div className="sidebar">
       <header>
         {/* logo */}
-        <img src="/logo.png" alt="logo" className="logo" width={40} />
+        <img src="/logo.png" alt="logo" className="logo" width={30} />
         <span>WISE SOFT CRM</span>
       </header>
       {/* nav links */}
@@ -20,7 +20,7 @@ function Sidebar() {
           <Dropdown
             key={links.id}
             title={links.title}
-            icon={links.icon}
+            Icon={links.icon}
             list={links.list}
           />
         ))}

@@ -1,10 +1,13 @@
-
+/* eslint-disable react/prop-types */
 //css style
-import "./Navbar.css"
+import "./Navbar.css";
 function Navbar() {
   return (
-    <nav>Navbar</nav>
-  )
+    <nav>
+      <button >Close</button>
+      Navbar
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
