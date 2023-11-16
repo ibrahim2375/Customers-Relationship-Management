@@ -1,0 +1,16 @@
+.box-area-chart {
+    width: 100%;
+    height: 100%;
+}
+
+.box-area-chart .box-chart {
+    width: 100%;
+    height: 100%;
+}
+
+.box-area-chart .title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

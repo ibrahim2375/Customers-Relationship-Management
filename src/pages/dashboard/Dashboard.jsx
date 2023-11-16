@@ -11,7 +11,9 @@ import {
   companiesData,
   customersData,
   BoxBarChartData,
+  BoxAreaChartData,
 } from "../../data";
+import BoxAreaChart from "../../components/dashboard/BoxAreaChart/BoxAreaChart";
 function Dashboard() {
   return (
     <div className="dashboard">
@@ -35,9 +37,13 @@ function Dashboard() {
         <div className="box box4">
           <BoxLineChart {...companiesData} />
         </div>
-        <div className="box box5">box5</div>
+        {/* box area chart */}
+        <div className="box box5">
+          <BoxAreaChart {...BoxAreaChartData} />
+        </div>
+        {/* box pie chart */}
         <div className="box box6">
-          <BoxPieChart/>
+          <BoxPieChart />
         </div>
         <div className="box box7">box7</div>
         {/* bar for income vs expence */}

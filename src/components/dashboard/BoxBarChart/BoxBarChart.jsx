@@ -17,10 +17,12 @@ import "./BoxBarChart.css";
 function BoxBarChart(props) {
   return (
     <div className="box-bar-chart">
+      {/* title */}
       <div className="title">
         <LuBarChartBig />
         <h4>{props.title}</h4>
       </div>
+      {/* chart */}
       <div className="box-chart">
         <ResponsiveContainer width="100%" height={300}>
           <BarChart
