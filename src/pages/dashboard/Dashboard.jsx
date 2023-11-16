@@ -2,6 +2,7 @@
 import BoxLineChart from "../../components/dashboard/BoxLineChart/BoxLineChart";
 import BoxBarChart from "../../components/dashboard/BoxBarChart/BoxBarChart";
 import BoxPieChart from "../../components/dashboard/BoxPieChart/BoxPieChart";
+import BoxAreaChart from "../../components/dashboard/BoxAreaChart/BoxAreaChart";
 //css style
 import "./Dashboard.css";
 //data source files
@@ -13,7 +14,6 @@ import {
   BoxBarChartData,
   BoxAreaChartData,
 } from "../../data";
-import BoxAreaChart from "../../components/dashboard/BoxAreaChart/BoxAreaChart";
 function Dashboard() {
   return (
     <div className="dashboard">
