@@ -4,6 +4,7 @@
 
 .content {
   position: relative;
+  /* z-index: 1; */
   width: calc(100% - var(--sidebar-width));
   left: var(--sidebar-width);
   transition: all 0.2s ease-in-out;
@@ -14,6 +15,7 @@
 }
 .content.closed {
   position: relative;
+  /* z-index: 1; */
   width: calc(100% - var(--sidebar-width-closed));
   left: var(--sidebar-width-closed);
   transition: all 0.2s ease-in-out;

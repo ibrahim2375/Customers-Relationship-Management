@@ -1,0 +1,14 @@
+.box-bar-chart {
+    width: 100%;
+    height: 100%;
+}
+.box-bar-chart .box-chart {
+    width: 100%;
+    height: 100%;
+}
+.box-bar-chart .title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

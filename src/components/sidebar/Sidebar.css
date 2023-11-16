@@ -5,8 +5,8 @@
   width: var(--sidebar-width);
   background-color: var(--dark-primary-color);
   color: var(--dark-text-color);
+  overflow-y: scroll;
   overflow-x: hidden;
-  overflow-y: auto;
   height: 100vh;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -43,7 +43,7 @@
 /* =========end style scroll bar========= */
 .sidebar header {
   padding: 0 20px;
-  height: 66px;
+  height: 63px;
   position: sticky;
   top: 0;
   left: 0;

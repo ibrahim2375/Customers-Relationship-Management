@@ -11,7 +11,7 @@ import Sidebar from "../components/sidebar/Sidebar";
 import { useState } from "react";
 
 function Layout() {
-  const [isClosed, setIsClosed] = useState(true);
+  const [isClosed, setIsClosed] = useState(false);
   return (
     <main>
       <div className="container">

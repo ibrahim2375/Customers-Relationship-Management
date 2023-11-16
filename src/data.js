@@ -3,6 +3,8 @@ import { AiOutlineSetting, AiOutlineTag, AiOutlineDashboard, AiOutlineShoppingCa
 import { RiCustomerService2Line } from "react-icons/ri";
 import { BiTransfer } from "react-icons/bi";
 import { LuCircleDotDashed } from "react-icons/lu";
+// cart boxes icons
+// import { FaRegChartBar } from "react-icons/fa";
 // pages data
 export const menu_links = [
     {
@@ -251,3 +253,278 @@ export const menu_links = [
     },
 
 ];
+
+// tiny Cart Data for boxes ===========================================
+export const tinyCartDataTotalIncome = {
+    icon: "",
+    title: "Total Income",
+    value: "8753865",
+    link: "/",
+    chartColor: "green",
+    dataKey: "pv",
+    percentage: 20,
+    duration: "month",
+    chartData: [
+        {
+            name: 'Page A',
+            uv: 4000,
+            pv: 2400,
+            amt: 2400,
+        },
+        {
+            name: 'Page B',
+            uv: 3000,
+            pv: 1398,
+            amt: 2210,
+        },
+        {
+            name: 'Page C',
+            uv: 2000,
+            pv: 9800,
+            amt: 2290,
+        },
+        {
+            name: 'Page D',
+            uv: 2780,
+            pv: 3908,
+            amt: 2000,
+        },
+        {
+            name: 'Page E',
+            uv: 1890,
+            pv: 4800,
+            amt: 2181,
+        },
+        {
+            name: 'Page F',
+            uv: 2390,
+            pv: 3800,
+            amt: 2500,
+        },
+        {
+            name: 'Page G',
+            uv: 3490,
+            pv: 4300,
+            amt: 2100,
+        },
+    ],
+}
+
+export const tinyCartDataTotalExpence = {
+    icon: "",
+    title: "Total Expence",
+    value: "6565",
+    link: "/",
+    chartColor: "purple",
+    dataKey: "pv",
+    percentage: -5,
+    duration: "month",
+    chartData: [
+        {
+            name: 'Page A',
+            uv: 4000,
+            pv: 2400,
+            amt: 2400,
+        },
+        {
+            name: 'Page B',
+            uv: 3000,
+            pv: 1398,
+            amt: 2210,
+        },
+        {
+            name: 'Page C',
+            uv: 2000,
+            pv: 9800,
+            amt: 2290,
+        },
+        {
+            name: 'Page D',
+            uv: 2780,
+            pv: 3908,
+            amt: 2000,
+        },
+        {
+            name: 'Page E',
+            uv: 1890,
+            pv: 4800,
+            amt: 2181,
+        },
+        {
+            name: 'Page F',
+            uv: 2390,
+            pv: 3800,
+            amt: 2500,
+        },
+        {
+            name: 'Page G',
+            uv: 3490,
+            pv: 4300,
+            amt: 2100,
+        },
+    ],
+}
+export const companiesData = {
+    title: "Companies",
+    value: "102",
+    link: "/",
+    chartColor: "gold",
+    dataKey: "pv",
+    percentage: 10,
+    duration: "month",
+    chartData: [
+        {
+            name: 'Page A',
+            uv: 4000,
+            pv: 2400,
+            amt: 2400,
+        },
+        {
+            name: 'Page B',
+            uv: 3000,
+            pv: 1398,
+            amt: 2210,
+        },
+        {
+            name: 'Page C',
+            uv: 2000,
+            pv: 9800,
+            amt: 2290,
+        },
+        {
+            name: 'Page D',
+            uv: 2780,
+            pv: 3908,
+            amt: 2000,
+        },
+        {
+            name: 'Page E',
+            uv: 1890,
+            pv: 4800,
+            amt: 2181,
+        },
+        {
+            name: 'Page F',
+            uv: 2390,
+            pv: 3800,
+            amt: 2500,
+        },
+        {
+            name: 'Page G',
+            uv: 3490,
+            pv: 4300,
+            amt: 2100,
+        },
+    ],
+}
+
+export const customersData = {
+    title: "Customers",
+    value: "24",
+    link: "/",
+    chartColor: "gold",
+    dataKey: "pv",
+    percentage: 10,
+    duration: "month",
+    chartData: [
+        {
+            name: 'Page A',
+            uv: 4000,
+            pv: 2400,
+            amt: 2400,
+        },
+        {
+            name: 'Page B',
+            uv: 3000,
+            pv: 1398,
+            amt: 2210,
+        },
+        {
+            name: 'Page C',
+            uv: 2000,
+            pv: 9800,
+            amt: 2290,
+        },
+        {
+            name: 'Page D',
+            uv: 2780,
+            pv: 3908,
+            amt: 2000,
+        },
+        {
+            name: 'Page E',
+            uv: 1890,
+            pv: 4800,
+            amt: 2181,
+        },
+        {
+            name: 'Page F',
+            uv: 2390,
+            pv: 3800,
+            amt: 2500,
+        },
+        {
+            name: 'Page G',
+            uv: 3490,
+            pv: 4300,
+            amt: 2100,
+        },
+    ],
+}
+
+export const BoxBarChartData =
+{
+    title: "Box Bar Chart",
+    dataKey1: "income",
+    dataKey2: "expence",
+    dataKey1Bg: "#967cff",
+    dataKey2Bg: "#fc9740",
+    dataKey1ActiveStroke: "blue",
+    dataKey2ActiveStroke: "orange",
+    chartData: [
+        {
+            name: "Time A",
+            expence: 4000,
+            income: 2400,
+            amt: 2400,
+        },
+        {
+            name: "Time B",
+            expence: 3000,
+            income: 1398,
+            amt: 2210,
+        },
+        {
+            name: "Time C",
+            expence: 2000,
+            income: 9800,
+            amt: 2290,
+        },
+        {
+            name: "Time D",
+            expence: 2780,
+            income: 3908,
+            amt: 2000,
+        },
+        {
+            name: "Time E",
+            expence: 1890,
+            income: 4800,
+            amt: 2181,
+        },
+        {
+            name: "Time F",
+            expence: 2390,
+            income: 3800,
+            amt: 2500,
+        },
+        {
+            name: "Time G",
+            expence: 3490,
+            income: 4300,
+            amt: 2100,
+        },
+    ]
+}
+
+

@@ -5,7 +5,7 @@ import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 //css style
 import "./Dropdown.css";
 import { NavLink } from "react-router-dom";
-function Dropdown({ title, Icon, list }) {
+function Dropdown({ title, Icon, list, isClosed }) {
   const [showList, setShowList] = useState(false);
   const handleDropdown = () => {
     setShowList(!showList);
@@ -29,9 +29,13 @@ function Dropdown({ title, Icon, list }) {
       </div>
       <div className="submenu" style={{ display: showList && "flex" }}>
         {list?.map((Link) => (
-          <NavLink to={Link?.path} className="submenu-link" key={Link?.id}>
+          <NavLink
+            to={Link?.path}
+            className={isClosed ? "submenu-link closed" : "submenu-link"}
+            key={Link?.id}
+          >
             <Link.icon className="dot-icon" />
-            {Link.page}
+            {!isClosed && Link.page}
           </NavLink>
         ))}
       </div>

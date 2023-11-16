@@ -1,5 +1,17 @@
+//components
+import BoxLineChart from "../../components/dashboard/BoxLineChart/BoxLineChart";
+import BoxBarChart from "../../components/dashboard/BoxBarChart/BoxBarChart";
+import BoxPieChart from "../../components/dashboard/BoxPieChart/BoxPieChart";
 //css style
 import "./Dashboard.css";
+//data source files
+import {
+  tinyCartDataTotalIncome,
+  tinyCartDataTotalExpence,
+  companiesData,
+  customersData,
+  BoxBarChartData,
+} from "../../data";
 function Dashboard() {
   return (
     <div className="dashboard">
@@ -7,14 +19,31 @@ function Dashboard() {
         <h2>Dashboard</h2>
       </header>
       <div className="dashboard-content">
-        <div className="box box1">box1</div>
-        <div className="box box2">box2</div>
-        <div className="box box3">box3</div>
-        <div className="box box4">box4</div>
+        {/* Total Income */}
+        <div className="box box1">
+          <BoxLineChart {...tinyCartDataTotalIncome} />
+        </div>
+        {/* Total Expence */}
+        <div className="box box2">
+          <BoxLineChart {...tinyCartDataTotalExpence} />
+        </div>
+        {/* Customers */}
+        <div className="box box3">
+          <BoxLineChart {...customersData} />
+        </div>
+        {/* Companies */}
+        <div className="box box4">
+          <BoxLineChart {...companiesData} />
+        </div>
         <div className="box box5">box5</div>
-        <div className="box box6">box6</div>
+        <div className="box box6">
+          <BoxPieChart/>
+        </div>
         <div className="box box7">box7</div>
-        <div className="box box8">box8</div>
+        {/* bar for income vs expence */}
+        <div className="box box8">
+          <BoxBarChart {...BoxBarChartData} />
+        </div>
         <div className="box box9">box9</div>
       </div>
     </div>

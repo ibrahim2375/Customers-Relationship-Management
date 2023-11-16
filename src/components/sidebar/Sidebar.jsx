@@ -23,6 +23,7 @@ function Sidebar({isClosed}) {
             title={links.title}
             Icon={links.icon}
             list={links.list}
+            isClosed={isClosed}
           />
         ))}
       </nav>

@@ -1,14 +1,12 @@
 nav {
   background-color: var(--light-primary-color);
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
-  padding: 24px;
+  padding: 20px;
   position: sticky;
   top: 0;
   left: 0;
-  /* border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
 }
 .menu-icon {
-  font-size: x-large;
+  font-size: large;
   cursor: pointer;
 }
