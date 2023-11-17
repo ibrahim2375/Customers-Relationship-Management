@@ -2,13 +2,15 @@
 import { Link, useLocation } from "react-router-dom";
 //css style
 import "./SlidbarLink.css";
-function SlidbarLink({ title, Icon, path }) {
+function SlidbarLink({ id, title, Icon, active, path, handleActiveMenu }) {
   const { pathname } = useLocation();
   return (
-    <div className="sidebar-link">
+    <div className="sidebar-link" onClick={() => handleActiveMenu(id)}>
       <Link
         to={path}
-        className={`nav-link ${pathname === path && "active-sidebar-link"}`}
+        className={`nav-link ${
+          (pathname == path) | active && "active-sidebar-link"
+        }`}
       >
         <div className="nav-link-title">
           <Icon />

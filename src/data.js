@@ -8,6 +8,7 @@ export const menu_links = [
         id: 0,
         title: "Dashboard",
         icon: AiOutlineDashboard,
+        active: false,
         path: "/dashboard",
     },
 
@@ -15,6 +16,7 @@ export const menu_links = [
         id: 1,
         title: "Customers",
         icon: RiCustomerService2Line,
+        active: false,
         list: [
             {
                 id: 0,
@@ -52,6 +54,7 @@ export const menu_links = [
         id: 2,
         title: "Accounting",
         icon: AiOutlineDashboard,
+        active: false,
         list: [
             {
                 id: 0,
@@ -113,6 +116,7 @@ export const menu_links = [
         id: 3,
         title: "Sales",
         icon: AiOutlineTag,
+        active: false,
         list: [
             {
                 id: 0,
@@ -162,6 +166,7 @@ export const menu_links = [
         id: 4,
         title: "Purchase",
         icon: AiOutlineShoppingCart,
+        active: false,
         list: [
             {
                 id: 0,
@@ -182,6 +187,7 @@ export const menu_links = [
         id: 5,
         title: "Projects",
         icon: AiOutlineDashboard,
+        active: false,
         path: "/projects",
     },
 
@@ -189,6 +195,7 @@ export const menu_links = [
         id: 6,
         title: "Orders",
         icon: AiOutlineShoppingCart,
+        active: false,
         list: [
             {
                 id: 0,
@@ -209,24 +216,28 @@ export const menu_links = [
         id: 7,
         title: "Documents",
         icon: AiOutlineDashboard,
+        active: false,
         path: "/documents",
     },
     {
         id: 8,
         title: "Tasks",
         icon: AiOutlineDashboard,
+        active: false,
         path: "/tsaks",
     },
     {
         id: 9,
         title: "Calendar",
         icon: AiOutlineDashboard,
+        active: false,
         path: "/calendar",
     },
     {
         id: 10,
         title: "Products & Services",
         icon: AiOutlineCodepen,
+        active: false,
         list: [
             {
                 id: 0,
@@ -258,6 +269,7 @@ export const menu_links = [
         id: 11,
         title: "Bank & Cash",
         icon: AiOutlineBank,
+        active: false,
         list: [
             {
                 id: 0,
@@ -283,6 +295,7 @@ export const menu_links = [
         id: 12,
         title: "Settings",
         icon: AiOutlineSetting,
+        active: false,
         list: [
             {
                 id: 0,
