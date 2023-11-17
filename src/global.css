@@ -10,7 +10,6 @@
   --light-text-color: #000;
   /* ----------dark theme---------- */
   --dark-primary-color: #1b2836;
-  /* --dark-secondary-color: #0f172a;#7367f0 */
   --dark-secondary-color: #7367f0;
   --dark-menu-bg-hover: #16202c;
   --dark-text-color: #fff;
@@ -42,4 +41,13 @@ body {
 /* for active menu selected */
 .active-sidebar-link {
   background-color: var(--dark-secondary-color);
+}
+/* theme classes */
+.dark-theme {
+  background-color: var(--dark-primary-color);
+  color: var(--dark-text-color);
+}
+.light-theme {
+  background-color: var(--light-primary-color);
+  color: var(--light-text-color);
 }

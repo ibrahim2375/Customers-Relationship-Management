@@ -5,30 +5,44 @@ import Navbar from "../components/navbar/Navbar";
 // import Menu from "../components/menu/Menu";
 import Footer from "../components/footer/Footer";
 
+import { useState } from "react";
+//components
+import Sidebar from "../components/sidebar/Sidebar";
 //css style
 import "./Layout.css";
-import Sidebar from "../components/sidebar/Sidebar";
-import { useState } from "react";
-
+// theme context
+import { themeContext } from "../hooks/ThemeContext";
 function Layout() {
+  const [theme, setTheme] = useState("light");
   const [isClosed, setIsClosed] = useState(false);
+
+  //handle theme changes
+  const toggleTheme = (e) => {
+    e.target.checked === true ? setTheme("dark") : setTheme("light");
+  };
   return (
-    <main>
-      <div className="container">
-        {/* <Menu /> */}
-        <Sidebar isClosed={isClosed} />
-        <div className={isClosed ? "content closed" : "content"}>
-          {/* navbar */}
-          <Navbar isClosed={isClosed} setIsClosed={setIsClosed} />
-          {/* Outlet to navigate between pages */}
-          <div className="pages">
-            <Outlet />
+    <themeContext.Provider value={theme}>
+      <main className={`${theme === "dark" ? "dark-theme" : "light-theme"}`}>
+        <div className="container">
+          {/* <Menu /> */}
+          <Sidebar isClosed={isClosed} />
+          <div className={isClosed ? "content closed" : "content"}>
+            {/* navbar */}
+            <Navbar
+              isClosed={isClosed}
+              setIsClosed={setIsClosed}
+              toggleTheme={toggleTheme}
+            />
+            {/* Outlet to navigate between pages */}
+            <div className="pages">
+              <Outlet />
+            </div>
+            {/* footer */}
+            <Footer />
           </div>
-          {/* footer */}
-          <Footer />
         </div>
-      </div>
-    </main>
+      </main>
+    </themeContext.Provider>
   );
 }
 

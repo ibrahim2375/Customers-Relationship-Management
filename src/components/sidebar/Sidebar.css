@@ -5,6 +5,7 @@
   width: var(--sidebar-width);
   background-color: var(--dark-primary-color);
   color: var(--dark-text-color);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
   overflow-x: hidden;
   height: 100vh;
@@ -16,7 +17,6 @@
 }
 .sidebar.closed {
   width: var(--sidebar-width-closed);
- 
 }
 /* =========style scroll bar========= */
 .sidebar::-webkit-scrollbar {
@@ -48,7 +48,7 @@
   gap: 20px;
   z-index: 99;
   background-color: var(--dark-primary-color);
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
 }
 .nav-links {
   width: 100%;
