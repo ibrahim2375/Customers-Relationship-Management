@@ -1,68 +1,69 @@
 /* Dropdown styles */
 .dropdown {
   position: relative;
+  padding: 0 10px;
 }
 .nav-link {
   padding: 0 20px;
-  width: 100%;
+  margin-top: 10px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 0px; */
   color: var(--text-dark-color);
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .nav-link-title {
-  height: 50px;
+  font-size: small;
+  font-weight: normal;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
-  gap: 15px;
+  padding: 15px 0;
+  gap: 20px;
 }
 .nav-link-title .dropdown-icon {
-  font-size: 16px;
+  /* font-size: 16px; */
   min-width: 20px;
   color: var(--light-primary-color);
 }
 .nav-link:hover {
   color: var(--text-dark-color);
-  background-color: var(--dark-secondary-color);
+  background-color: var(--dark-menu-bg-hover);
 }
 .submenu {
+  overflow: hidden;
   display: none;
-  padding: 10px 0;
+  padding: 20px 0;
   flex-direction: column;
-  /* position: absolute;
-  left: 310%;
-  top: 0;
-  z-index: 999; */
-  /* background-color: brown; */
-  /* gap: 10px; */
+  background-color: var(--dark-menu-bg-hover);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 
-.submenu .submenu-link  {
+.submenu .submenu-link {
   cursor: pointer;
   font-size: small;
-  padding: 10px 10px 10px 60px;
+  padding: 15px 15px 15px 50px;
   color: var(--text-dark-color);
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
 }
-.submenu .submenu-link.closed {
-  padding: 10px 10px 10px 20px;
-}
+
+
 .submenu .submenu-link .dot-icon {
   font-size: medium;
 }

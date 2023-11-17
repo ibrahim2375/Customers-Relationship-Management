@@ -251,6 +251,12 @@ export const menu_links = [
             },
         ]
     },
+    {
+        id: 8,
+        title: "Dashboard",
+        icon: AiOutlineDashboard,
+        path: "/dashboard",
+    },
 
 ];
 

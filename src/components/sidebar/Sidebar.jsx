@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 //components
 import Dropdown from "../dropdown/Dropdown";
-// import SlidbarLink from "../navlink/SlidbarLink";
+import SlidbarLink from "../navlink/SlidbarLink";
 //css style
 import "./Sidebar.css";
 //page data file
 import { menu_links } from "../../data";
-function Sidebar({isClosed}) {
+function Sidebar({ isClosed }) {
   return (
     <div className={isClosed ? "sidebar closed" : "sidebar"}>
       <header>
@@ -17,15 +17,24 @@ function Sidebar({isClosed}) {
       {/* nav links */}
       <nav className="nav-links">
         {/* ============dropdown=============== */}
-        {menu_links.map((links) => (
-          <Dropdown
-            key={links.id}
-            title={links.title}
-            Icon={links.icon}
-            list={links.list}
-            isClosed={isClosed}
-          />
-        ))}
+        {menu_links.map((links) =>
+          links.list ? (
+            <Dropdown
+              key={links.id}
+              title={links.title}
+              Icon={links.icon}
+              list={links.list}
+              isClosed={isClosed}
+            />
+          ) : (
+            <SlidbarLink
+              key={links.id}
+              title={links.title}
+              Icon={links.icon}
+              path={links.path}
+            />
+          )
+        )}
       </nav>
     </div>
   );

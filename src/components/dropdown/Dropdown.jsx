@@ -34,7 +34,7 @@ function Dropdown({ title, Icon, list, isClosed }) {
             className={isClosed ? "submenu-link closed" : "submenu-link"}
             key={Link?.id}
           >
-            <Link.icon className="dot-icon" />
+            {/* <Link.icon className="dot-icon" /> */}
             {!isClosed && Link.page}
           </NavLink>
         ))}

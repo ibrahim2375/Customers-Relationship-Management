@@ -16,11 +16,7 @@
 }
 .sidebar.closed {
   width: var(--sidebar-width-closed);
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
+ 
 }
 /* =========style scroll bar========= */
 .sidebar::-webkit-scrollbar {
@@ -49,7 +45,6 @@
   left: 0;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   gap: 20px;
   z-index: 99;
   background-color: var(--dark-primary-color);

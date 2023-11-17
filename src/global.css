@@ -9,14 +9,17 @@
   --light-secondary-color: #f1f5f9;
   --light-text-color: #000;
   /* ----------dark theme---------- */
-  --dark-primary-color: #1e293b;
-  --dark-secondary-color: #0f172a;
+  --dark-primary-color: #1b2836;
+  /* --dark-secondary-color: #0f172a;#7367f0 */
+  --dark-secondary-color: #7367f0;
+  --dark-menu-bg-hover: #0f172a;
   --dark-text-color: #fff;
   /* *****text***** */
   --muted-text-color: #ccc;
   /* vars */
   --sidebar-width: 250px;
-  --sidebar-width-closed: 60px;
+  --sidebar-width-closed: 10px;
+  --sidebar-left-closed: -230px;
 }
 /* ==============init============== */
 * {

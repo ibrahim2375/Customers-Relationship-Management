@@ -2,14 +2,17 @@
 //css style
 import { Link } from "react-router-dom";
 import "./SlidbarLink.css";
-function SlidbarLink({ page, icon, path }) {
+function SlidbarLink({ title, Icon, path }) {
   return (
-    <Link to={path} className="nav-link">
-      <div className="nav-link-title">
-        <img className="dropdown-icon" src={`/icons/${icon}`} alt="icon" />
-        <span>{page}</span>
-      </div>
-    </Link>
+    <div className="sidebar-link">
+      <Link to={path} className="nav-link">
+        <div className="nav-link-title">
+          <Icon />
+          {/* <img className="dropdown-icon" src={`/icons/${icon}`} alt="icon" /> */}
+          <span>{title}</span>
+        </div>
+      </Link>
+    </div>
   );
 }
 
