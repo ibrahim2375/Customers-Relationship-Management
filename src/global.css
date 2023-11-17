@@ -12,7 +12,7 @@
   --dark-primary-color: #1b2836;
   /* --dark-secondary-color: #0f172a;#7367f0 */
   --dark-secondary-color: #7367f0;
-  --dark-menu-bg-hover: #0f172a;
+  --dark-menu-bg-hover: #16202c;
   --dark-text-color: #fff;
   /* *****text***** */
   --muted-text-color: #ccc;
@@ -35,6 +35,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 /* ==============global classes============== */
+/* this for react router dom navlink class  submenu*/
 .active {
   font-weight: bold;
+}
+/* for active menu selected */
+.active-sidebar-link {
+  background-color: var(--dark-secondary-color);
 }

@@ -1,3 +1,6 @@
 .sidebar-link {
   padding: 0 10px;
 }
+.active-sidebar-link {
+  background-color: var(--dark-secondary-color);
+}

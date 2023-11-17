@@ -1,14 +1,17 @@
 /* eslint-disable react/prop-types */
+import { Link, useLocation } from "react-router-dom";
 //css style
-import { Link } from "react-router-dom";
 import "./SlidbarLink.css";
 function SlidbarLink({ title, Icon, path }) {
+  const { pathname } = useLocation();
   return (
     <div className="sidebar-link">
-      <Link to={path} className="nav-link">
+      <Link
+        to={path}
+        className={`nav-link ${pathname === path && "active-sidebar-link"}`}
+      >
         <div className="nav-link-title">
           <Icon />
-          {/* <img className="dropdown-icon" src={`/icons/${icon}`} alt="icon" /> */}
           <span>{title}</span>
         </div>
       </Link>

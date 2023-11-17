@@ -13,7 +13,7 @@ function Dropdown({ title, Icon, list, isClosed }) {
   return (
     <div className="dropdown">
       <div
-        className={`nav-link ${showList && "active-dropdown"}`}
+        className={`nav-link ${showList && "active-sidebar-link "}`}
         onClick={handleDropdown}
       >
         <div className="nav-link-title">

@@ -1,42 +1,14 @@
 //icon
 import { AiOutlineSetting, AiOutlineTag, AiOutlineDashboard, AiOutlineShoppingCart, AiOutlineCodepen, AiOutlineBank } from "react-icons/ai";
 import { RiCustomerService2Line } from "react-icons/ri";
-import { BiTransfer } from "react-icons/bi";
-import { LuCircleDotDashed } from "react-icons/lu";
-// cart boxes icons
-// import { FaRegChartBar } from "react-icons/fa";
+
 // pages data
 export const menu_links = [
     {
         id: 0,
-        title: "Menu",
+        title: "Dashboard",
         icon: AiOutlineDashboard,
-        list: [
-            {
-                id: 0,
-                page: "Dashboard",
-                path: "/dashboard",
-                icon: LuCircleDotDashed
-            },
-            {
-                id: 1,
-                page: "Companies",
-                path: "/companies",
-                icon: LuCircleDotDashed
-            },
-            {
-                id: 2,
-                page: "Calendar",
-                path: "/calendar",
-                icon: LuCircleDotDashed
-            },
-            {
-                id: 3,
-                page: "Documents",
-                path: "/documents",
-                icon: LuCircleDotDashed
-            },
-        ]
+        path: "/dashboard",
     },
 
     {
@@ -48,57 +20,93 @@ export const menu_links = [
                 id: 0,
                 page: "Add Customer",
                 path: "/add-customers",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 1,
                 page: "List Customers",
                 path: "/list-customers",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 2,
+                page: "Companies",
+                path: "/companies",
+
+            },
+            {
+                id: 3,
                 page: "Groups",
                 path: "/groups",
-                icon: LuCircleDotDashed
+
+            },
+            {
+                id: 4,
+                page: "Files",
+                path: "/files",
+
             }
         ]
     },
     {
         id: 2,
-        title: "Transactions",
-        icon: BiTransfer,
+        title: "Accounting",
+        icon: AiOutlineDashboard,
         list: [
             {
                 id: 0,
                 page: "New Desposit",
                 path: "/new-desposit",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 1,
                 page: "New Expense",
                 path: "/new-expense",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 2,
                 page: "Transfer",
                 path: "/transfer",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 3,
-                page: "View Transactions",
-                path: "/transactions",
-                icon: LuCircleDotDashed
+                page: "Bills",
+                path: "/transfer",
+
             },
             {
                 id: 4,
+                page: "View Transactions",
+                path: "/transactions",
+
+            },
+            {
+                id: 5,
                 page: "Balance Sheet",
                 path: "/balance-sheet",
-                icon: LuCircleDotDashed
+
             },
+            {
+                id: 6,
+                page: "Accounts",
+                path: "/accounts",
+
+            },
+            {
+                id: 7,
+                page: "New Account",
+                path: "/accounts/new-account",
+
+            },
+            {
+                id: 8,
+                page: "Assets",
+                path: "/assets",
+
+            }
         ]
     },
     {
@@ -110,48 +118,75 @@ export const menu_links = [
                 id: 0,
                 page: "Invoices",
                 path: "/invoices",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 1,
                 page: "New Invoice",
-                path: "/new-invoice",
-                icon: LuCircleDotDashed
+                path: "/invoices/new-invoice",
+
             },
             {
                 id: 2,
-                page: "Recurring Invoice",
-                path: "/recurring-invoice",
-                icon: LuCircleDotDashed
+                page: "Recurring Invoices",
+                path: "/recurring-invoices",
+
             },
             {
                 id: 3,
                 page: "New Recurring Invoice",
-                path: "/new-invoice",
-                icon: LuCircleDotDashed
+                path: "/recurring-invoices/new-invoice",
+
             },
             {
                 id: 4,
                 page: "Quotes",
                 path: "/quotes",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 5,
                 page: "Create New Quote",
-                path: "/new-quote",
-                icon: LuCircleDotDashed
+                path: "/quotes/new-quote",
+
             },
             {
                 id: 6,
                 page: "Payment",
                 path: "/payment",
-                icon: LuCircleDotDashed
+
             },
         ]
     },
     {
         id: 4,
+        title: "Purchase",
+        icon: AiOutlineShoppingCart,
+        list: [
+            {
+                id: 0,
+                page: "Purchase Orders",
+                path: "/purchases",
+
+            },
+            {
+                id: 1,
+                page: "NewPurchase Orders",
+                path: "/purchases/new-purchase",
+
+            },
+
+        ]
+    },
+    {
+        id: 5,
+        title: "Projects",
+        icon: AiOutlineDashboard,
+        path: "/projects",
+    },
+
+    {
+        id: 6,
         title: "Orders",
         icon: AiOutlineShoppingCart,
         list: [
@@ -159,19 +194,37 @@ export const menu_links = [
                 id: 0,
                 page: "List All Orders",
                 path: "/list-orders",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 1,
                 page: "Add New Order",
                 path: "/new-order",
-                icon: LuCircleDotDashed
+
             },
 
         ]
     },
     {
-        id: 5,
+        id: 7,
+        title: "Documents",
+        icon: AiOutlineDashboard,
+        path: "/documents",
+    },
+    {
+        id: 8,
+        title: "Tasks",
+        icon: AiOutlineDashboard,
+        path: "/tsaks",
+    },
+    {
+        id: 9,
+        title: "Calendar",
+        icon: AiOutlineDashboard,
+        path: "/calendar",
+    },
+    {
+        id: 10,
         title: "Products & Services",
         icon: AiOutlineCodepen,
         list: [
@@ -179,30 +232,30 @@ export const menu_links = [
                 id: 0,
                 page: "Products",
                 path: "/products",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 1,
                 page: "New Product",
-                path: "/new-product",
-                icon: LuCircleDotDashed
+                path: "/products/new-product",
+
             },
             {
                 id: 2,
                 page: "Services",
                 path: "/services",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 3,
                 page: "New Service",
-                path: "/new-service",
-                icon: LuCircleDotDashed
+                path: "/services/new-service",
+
             },
         ]
     },
     {
-        id: 6,
+        id: 11,
         title: "Bank & Cash",
         icon: AiOutlineBank,
         list: [
@@ -210,24 +263,24 @@ export const menu_links = [
                 id: 0,
                 page: "New Account",
                 path: "/new-account",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 1,
                 page: "List Accounts",
                 path: "/list-accounts",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 2,
                 page: "Account Balances",
                 path: "/account-balances",
-                icon: LuCircleDotDashed
+
             },
         ]
     },
     {
-        id: 7,
+        id: 12,
         title: "Settings",
         icon: AiOutlineSetting,
         list: [
@@ -235,28 +288,23 @@ export const menu_links = [
                 id: 0,
                 page: "General Settings",
                 path: "/settings/general",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 1,
                 page: "Staff",
                 path: "/settings/staff",
-                icon: LuCircleDotDashed
+
             },
             {
                 id: 2,
                 page: "Roles",
                 path: "/settings/roles",
-                icon: LuCircleDotDashed
+
             },
         ]
     },
-    {
-        id: 8,
-        title: "Dashboard",
-        icon: AiOutlineDashboard,
-        path: "/dashboard",
-    },
+
 
 ];
 

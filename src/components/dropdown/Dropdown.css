@@ -29,10 +29,9 @@
   align-items: center;
   justify-content: center;
   padding: 15px 0;
-  gap: 20px;
+  gap: 10px;
 }
 .nav-link-title .dropdown-icon {
-  /* font-size: 16px; */
   min-width: 20px;
   color: var(--light-primary-color);
 }
@@ -63,11 +62,8 @@
   gap: 10px;
 }
 
-
 .submenu .submenu-link .dot-icon {
   font-size: medium;
 }
 
-.active-dropdown {
-  background-color: var(--dark-secondary-color);
-}
+
